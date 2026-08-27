@@ -2,13 +2,25 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=https://simplebuild.it/VoiceGenerator/">
-<link rel="canonical" href="https://simplebuild.it/VoiceGenerator/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, follow">
+<!-- Fallback senza JavaScript: porta almeno alla pagina dell'app. -->
+<meta http-equiv="refresh" content="2; url=https://simplebuild.it/VoiceGenerator/">
+<link rel="canonical" href="https://simplebuild.it/VoiceGenerator/">
 <title>Questa pagina si è spostata</title>
 </head>
 <body>
 <p>Questa pagina ora si trova su <a href="https://simplebuild.it/VoiceGenerator/">https://simplebuild.it/VoiceGenerator/</a>.</p>
-<script>location.replace("https://simplebuild.it/VoiceGenerator/");</script>
+<script>
+// Ricompone il percorso: /Voice-Generator-TTS/privacy.html  ->  https://simplebuild.it/VoiceGenerator/ + privacy.html
+// Cosi' un vecchio link alla privacy arriva alla privacy, non alla home.
+(function () {
+  var PREFISSO = "/Voice-Generator-TTS/";
+  var DESTINAZIONE = "https://simplebuild.it/VoiceGenerator/";
+  var p = location.pathname;
+  var resto = (p.indexOf(PREFISSO) === 0) ? p.slice(PREFISSO.length) : "";
+  location.replace(DESTINAZIONE + resto + location.search + location.hash);
+})();
+</script>
 </body>
 </html>

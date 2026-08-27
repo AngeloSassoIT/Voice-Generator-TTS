@@ -29,26 +29,47 @@
   <main class="section">
     <div class="container prose">
 
-      <!-- ============================================================
-           PRIVACY POLICY — DA COMPILARE MANUALMENTE / TO BE FILLED IN
-           Sostituisci il contenuto dei due blocchi qui sotto (EN e IT)
-           con il testo definitivo della tua privacy policy.
-           ============================================================ -->
+      <!-- Testo redatto il 27 agosto 2026 sulla base del codice dell'app:
+           nessuna chiamata di rete in 36 file di produzione, nessun
+           entitlement (quindi niente iCloud), sintesi con AVSpeechSynthesizer,
+           file .m4a nella cartella Documenti, una sola preferenza salvata
+           (vgtts.selectedVoiceID). Se l'app cambia, va aggiornato anche
+           questo testo — ed è l'unico posto in cui vive. -->
 
       <!-- ENGLISH VERSION -->
       <div data-lang-block="en">
         <h1>Privacy Policy</h1>
-        <p class="prose-meta">Last updated: <em>[DATE — TO BE COMPLETED]</em></p>
+        <p class="prose-meta">Last updated: <em>27 August 2026</em></p>
 
-        <div class="placeholder-box">
-          <p><strong>⚠︎ Placeholder</strong> — This page has not been completed yet. Replace this block with the final Privacy Policy text.</p>
-        </div>
+        <p><strong>Voice Generator TTS does not collect any personal data.</strong> There are no accounts, no analytics, no advertising and no third-party SDKs. The app works entirely on your device and does not connect to the internet.</p>
 
-        <h2>[Section — e.g. “Data We Collect”]</h2>
-        <p>[TO BE COMPLETED]</p>
+        <h2>Data we collect</h2>
+        <p>None. We have no servers and receive nothing from the app — not your text, not your audio files, not usage statistics, not identifiers.</p>
 
-        <h2>[Section — e.g. “How Your Data Is Used”]</h2>
-        <p>[TO BE COMPLETED]</p>
+        <h2>What stays on your device</h2>
+        <ul>
+          <li><strong>The text you type.</strong> It is converted to speech on your device and is never transmitted anywhere.</li>
+          <li><strong>The audio files you create.</strong> They are saved as <code>.m4a</code> files in the app's Documents folder, on your device. Because the app supports the Files app, you can open, copy, move or delete them yourself at any time.</li>
+          <li><strong>One preference:</strong> the voice you last selected, so the app remembers it between launches.</li>
+        </ul>
+
+        <h2>Speech synthesis</h2>
+        <p>Speech is generated with Apple's built-in speech synthesis (<em>AVSpeechSynthesizer</em>), which runs on your device. Some higher-quality voices are optional downloads provided by Apple through iOS system settings: that download is handled by iOS, not by this app, and is subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+        <h2>Permissions</h2>
+        <p>The app requests no permissions. It does not access the microphone, the camera, your photos, your contacts or your location.</p>
+
+        <h2>Sharing and deletion</h2>
+        <p>Nothing is shared automatically. If you choose to share an audio file, it leaves the app only through the destination you pick, and what happens next is governed by that app or service. Deleting Voice Generator TTS removes the app and the files stored inside it; files you have already exported elsewhere are not affected.</p>
+
+        <h2>Children</h2>
+        <p>The app collects no data from anyone, including children.</p>
+
+        <h2>In-app purchases</h2>
+        <p>There are none, and there are no subscriptions.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>Any future change will be published on this page, with the date above updated.</p>
 
         <h2>Contact</h2>
         <p>For any questions about this Privacy Policy, contact us at <a href="mailto:support@simplebuild.it">support@simplebuild.it</a>.</p>
@@ -57,17 +78,37 @@
       <!-- VERSIONE ITALIANA -->
       <div data-lang-block="it" hidden>
         <h1>Informativa sulla Privacy</h1>
-        <p class="prose-meta">Ultimo aggiornamento: <em>[DATA — DA COMPILARE]</em></p>
+        <p class="prose-meta">Ultimo aggiornamento: <em>27 agosto 2026</em></p>
 
-        <div class="placeholder-box">
-          <p><strong>⚠︎ Segnaposto</strong> — Questa pagina non è ancora stata completata. Sostituisci questo blocco con il testo definitivo dell'informativa sulla privacy.</p>
-        </div>
+        <p><strong>Voice Generator TTS non raccoglie alcun dato personale.</strong> Non ci sono account, statistiche d'uso, pubblicità né SDK di terze parti. L'app funziona interamente sul tuo dispositivo e non si collega a internet.</p>
 
-        <h2>[Sezione — es. “Dati raccolti”]</h2>
-        <p>[DA COMPILARE]</p>
+        <h2>Dati raccolti</h2>
+        <p>Nessuno. Non abbiamo server e non riceviamo nulla dall'app: né il testo che scrivi, né i file audio, né statistiche, né identificativi.</p>
 
-        <h2>[Sezione — es. “Come vengono usati i dati”]</h2>
-        <p>[DA COMPILARE]</p>
+        <h2>Cosa resta sul tuo dispositivo</h2>
+        <ul>
+          <li><strong>Il testo che scrivi.</strong> Viene convertito in voce sul dispositivo e non viene mai trasmesso altrove.</li>
+          <li><strong>I file audio che crei.</strong> Sono salvati come file <code>.m4a</code> nella cartella Documenti dell'app, sul tuo dispositivo. Poiché l'app è compatibile con l'app File, puoi aprirli, copiarli, spostarli o eliminarli tu stesso in qualsiasi momento.</li>
+          <li><strong>Una preferenza:</strong> l'ultima voce selezionata, perché l'app la ricordi tra un avvio e l'altro.</li>
+        </ul>
+
+        <h2>Sintesi vocale</h2>
+        <p>La voce è generata con la sintesi vocale integrata di Apple (<em>AVSpeechSynthesizer</em>), che funziona sul dispositivo. Alcune voci di qualità superiore sono scaricabili facoltativamente da Apple tramite le impostazioni di sistema di iOS: quel download è gestito da iOS e non da questa app, ed è soggetto all'<a href="https://www.apple.com/legal/privacy/">informativa sulla privacy di Apple</a>.</p>
+
+        <h2>Autorizzazioni</h2>
+        <p>L'app non richiede alcuna autorizzazione. Non accede al microfono, alla fotocamera, alle tue foto, ai contatti né alla posizione.</p>
+
+        <h2>Condivisione ed eliminazione</h2>
+        <p>Nulla viene condiviso automaticamente. Se scegli di condividere un file audio, questo esce dall'app solo verso la destinazione che indichi, e da lì in poi vale l'informativa di quell'app o servizio. Disinstallando Voice Generator TTS vengono rimossi l'app e i file conservati al suo interno; i file che hai già esportato altrove non sono interessati.</p>
+
+        <h2>Minori</h2>
+        <p>L'app non raccoglie dati da nessuno, minori compresi.</p>
+
+        <h2>Acquisti in-app</h2>
+        <p>Non ce ne sono, e non ci sono abbonamenti.</p>
+
+        <h2>Modifiche a questa informativa</h2>
+        <p>Eventuali modifiche future saranno pubblicate su questa pagina, con l'aggiornamento della data in alto.</p>
 
         <h2>Contatti</h2>
         <p>Per qualsiasi domanda su questa informativa, scrivici a <a href="mailto:support@simplebuild.it">support@simplebuild.it</a>.</p>
